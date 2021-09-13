@@ -1,0 +1,736 @@
+{
+	"info": {
+		"_postman_id": "0eb7ba9d-6bf2-41bd-a8a5-0828c91ea6cd",
+		"name": "NOVEL CoVID19 API",
+		"description": "An open API for disease-related statistics 3.0.0",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "COVID-19: Worldometers",
+			"item": [
+				{
+					"name": "Get global COVID-19 totals",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/all",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get COVID-19 totals for all US States",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/states",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"states"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get COVID-19 totals for specific US State",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/states/California",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"states",
+								"California"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get COVID-19 totals for all continents",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/continents",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"continents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get COVID-19 totals for a specific continent",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/continents/North America",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"continents",
+								"North America"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get COVID-19 totals for all countries",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/countries",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"countries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get COVID-19 totals for a specific country",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/countries/Canada",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"countries",
+								"Canada"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "COVID-19 data sourced from Worldometers, updated every 10 minutes"
+		},
+		{
+			"name": "COVID-19: JHUCSSE",
+			"item": [
+				{
+					"name": "Get COVID-19 totals for all countries and their provinces",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/jhucsse",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"jhucsse"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get COVID-19 totals for all US counties",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/jhucsse/counties",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"jhucsse",
+								"counties"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get COVID-19 totals for a specific county",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/jhucsse/counties/Baldwin",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"jhucsse",
+								"counties",
+								"Baldwin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get COVID-19 time series data for all countries and their provinces",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/historical",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"historical"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get global accumulated COVID-19 time series data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/historical/all",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"historical",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get COVID-19 time series data for a specific country",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/historical/Canada",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"historical",
+								"Canada"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get COVID-19 time series data for a specific set of countries",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/historical/Canada,Bangladesh",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"historical",
+								"Canada,Bangladesh"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get COVID-19 time series data for a set of provinces in a country",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/historical/Canada/ontario",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"historical",
+								"Canada",
+								"ontario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all possible US States",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/historical/usacounties",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"historical",
+								"usacounties"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get COVID-19  data for all counties in a specified US state",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/historical/usacounties/alaska",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"historical",
+								"usacounties",
+								"alaska"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "COVID-19 data sourced from Johns Hopkins University, updated every 10 minutes"
+		},
+		{
+			"name": "COVID-19: NYT",
+			"item": [
+				{
+					"name": "All states",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/nyt/states",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"nyt",
+								"states"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "State data by name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/nyt/states/Alabama,Alaska",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"nyt",
+								"states",
+								"Alabama,Alaska"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Counties",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/nyt/counties/Autauga",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"nyt",
+								"counties",
+								"Autauga"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Counties by name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/nyt/counties",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"nyt",
+								"counties"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "US Nationwide Data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/nyt/usa",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"nyt",
+								"usa"
+							]
+						},
+						"description": "Return all NYT US nationwide data. Each entry returned represents data for a given day."
+					},
+					"response": []
+				}
+			],
+			"description": "COVID-19 data sourced from the New York Times, updated every 24 hours"
+		},
+		{
+			"name": "COVID-19: Apple",
+			"item": [
+				{
+					"name": "All countries",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/apple/countries",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"apple",
+								"countries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Countries by name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/apple/countries/Canada",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"apple",
+								"countries",
+								"Canada"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Region inside Countries by name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/apple/countries/Canada/Ontari",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"apple",
+								"countries",
+								"Canada",
+								"Ontari"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "COVID-19 related mobility trend data from Apple, updated every 24 hours"
+		},
+		{
+			"name": "COVID-19: Government",
+			"item": [
+				{
+					"name": "Gov",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/gov",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"gov"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Gov data by country",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/gov/Canada",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"gov",
+								"Canada"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "COVID-19 individual government reported data, updated every 24 hours"
+		},
+		{
+			"name": "COVID-19: Vaccine",
+			"item": [
+				{
+					"name": "Vaccine",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/vaccine",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"vaccine"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vaccine coverage",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/vaccine/coverage",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"vaccine",
+								"coverage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vaccine coverage countries",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/vaccine/coverage/countries",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"vaccine",
+								"coverage",
+								"countries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vaccine coverage countries by name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/vaccine/coverage/countries/canada",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"vaccine",
+								"coverage",
+								"countries",
+								"canada"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vaccine coverage states",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/vaccine/coverage/states",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"vaccine",
+								"coverage",
+								"states"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vaccine coverage state by name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/vaccine/coverage/states/Alabama",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"vaccine",
+								"coverage",
+								"states",
+								"Alabama"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "COVID-19 vaccine trial data from raps.org, updated every 24 hours"
+		},
+		{
+			"name": "COVID-19: Therapeutics",
+			"item": [
+				{
+					"name": "Get therapeutics trial data from RAPS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/therapeutics",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"therapeutics"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "COVID-19 therapeutic trial data from raps.org, updated every 24 hours"
+		},
+		{
+			"name": "COVID-19: CDC",
+			"item": [
+				{
+					"name": "Get Influenza-like-illness data for the 2019 and 2020 outbreaks from the US Center for Disease Control",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/v3/influenza/cdc/ILINet",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"v3",
+								"influenza",
+								"cdc",
+								"ILINet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Influenza report data for the 2019 and 2020 outbreaks from the US Center for Disease Control, reported by US clinical labs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/v3/influenza/cdc/USCL",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"v3",
+								"influenza",
+								"cdc",
+								"USCL"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Influenza report data for the 2019 and 2020 outbreaks from the US Center for Disease Control, reported by US public health labs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/v3/influenza/cdc/USPHL",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"v3",
+								"influenza",
+								"cdc",
+								"USPHL"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Influenza data reported by the United States CDC, updated every 24 hours"
+		}
+	]
+}
